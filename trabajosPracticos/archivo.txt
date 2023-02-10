@@ -1,1 +1,7 @@
-en esta carpeta van a ir los trabajos practicos
+1. Estar posicionado en la carpeta madre
+2. Por UNICA vez se usa git init
+3. Git status para conocer el estado de los archivos
+4. Agregamos los archivos modificados usando git add .
+5. Usamos git status para confirmar que se ha guardado
+6. Hacemos un git commit -m "mensaje"
+7. Subir los cambios al repositorio con git push https://github.com/YuuAtukal/trabajoClase.git main
