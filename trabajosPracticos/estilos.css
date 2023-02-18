@@ -1,0 +1,40 @@
+h3,h5{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:brown;
+}
+body{
+    margin: 30px;
+    background-image: url(https://images.unsplash.com/photo-1613068687893-5e85b4638b56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvZGluZyUyMHdhbGxwYXBlcnxlbnwwfHwwfHw%3D&w=1000&q=80);
+    background-attachment: fixed;
+}
+.cursiva{
+    font-style: italic;
+}
+.perfil{
+    border-radius: 50%;
+}
+#imagenHtml{
+    float: right;
+}
+
+#nombre{
+    text-align: center;
+}
+.casilla{
+    border: inset;
+    border-color: sienna;
+    padding: 20px;
+    margin: 90px;
+    background-color:darkgray;
+    opacity: 0.95;
+}
+
+.container{
+    display: flex;
+    align-items: stretch;
+}
+
+.contenedor{
+    margin-right: 50px;
+}
+

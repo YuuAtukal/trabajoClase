@@ -1,0 +1,54 @@
+body{
+    background-color: gainsboro;
+}
+
+.grande{
+    border: 5px solid rgb(92, 26, 33);
+    border-radius: 50px;
+    margin: 300px;
+    background-color: rgb(248, 176, 176);
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 115px auto auto 115px auto;
+    gap: 15px;
+    margin: 30px;
+}
+#casilla{
+    text-align: center;
+    font-size: 200px;
+}
+#input{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    width: 600px;
+    height: 150px;
+    direction: rtl;
+    font-size: 80px;
+    border-radius: 30px;
+    border: 5px solid rgb(92, 26, 33);
+    background-color: rgb(204, 204, 204);
+    background: linear-gradient(to bottom right, rgb(116, 116, 116), rgb(204, 204, 204));
+}
+.item{
+    background-color: rgb(94, 223, 230);
+    border: 4.5px solid rgb(92, 26, 33);
+    color:rgb(92, 26, 33);
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    padding: 20px;
+    box-shadow: 10px 10px 1px rgba(0,0,0,.5);
+}
+#ancho{
+    width: 198px;
+    border-radius: 10px;
+}
+.cuadro{
+    border-radius: 10px;
+}
+.ovalo{
+    border-radius: 60px;
+}
