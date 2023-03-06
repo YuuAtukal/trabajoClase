@@ -1,16 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos.css"/>
+    <title>Airbnb - Tu próximo destino</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-HcJfqp2lWgJboIzCkOfnouGQLvlmJgOps4LXr75MoVJS6a/hoPpZ8wFQbNhPx+V9" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<header>
-    
-</header>
+
 <body>
-    
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.airbnb.com.ar/assets/press/logo/airbnb_horizontal_lockup-2f62ba941e53d4c4e2f6edbc5136a1a6c729ab06dfcb0b0f7321618d1c11dce9.png"
+                    alt="Airbnb Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Explorar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hospedar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ayuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Iniciar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>Tu próximo destino te espera</h1>
+                    <p>Descubre alojamientos únicos y experiencias inolvidables en todo el mundo.</p>
+                    <form action="#" method="get">
+                        <div class="form-row align-items-center">
+                            <div class="col">
+                                <label for="destination" class="sr-only">¿A dónde te gustaría ir?</label>
+                                <input type="text" class="form-control" id="destination" name="destination"
+                                    placeholder="¿A dónde te gustaría ir?">
+                            </div>
+                            <div class="col">
+                                <label for="checkin" class="sr-only">Fecha de llegada</label>
+                                <input type="text" class="form" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
