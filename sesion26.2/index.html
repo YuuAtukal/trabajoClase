@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Nombre</h3>
+    <input type="text" id="nombre"><br />
+    <h3>Apellido</h3>
+    <input type="text" id="apellido"><br />
+    <h3>Direccion</h3>
+    <input type="text" id="direccion"><br />
+    <h3>Telefono</h3>
+    <input type="number" id="telefono"><br />
+
+    <h3>Escoger serie favorita</h3>
+    <select id="serie">
+        <option>Stranger Things</option>
+        <option>The Batman</option>
+        <option>Breaking Bad</option>
+        <option>Elif</option>
+        <option>La casa de papel</option>
+    </select><br/><br />
+
+    <button type="button" onclick="guardarDatos()">Guardar</button>
+    <button type="button" onclick="recuperarDatos()">Recuperar</button>
+    <h4 id="datosGuardados"></h4>
+
+</body>
+
+</html>
