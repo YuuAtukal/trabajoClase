@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <body background="https://cdn-3.expansion.mx/dims4/default/6c511d3/2147483647/strip/true/crop/788x443+0+0/resize/1800x1012!/format/webp/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F60%2F3a%2F123ca7d34dc59309960768f0c0a0%2Fistock-1165069918.jpg"></body>
+    <link rel="stylesheet" href="estilos.css" />
+    <title>EComerce</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" id="inicia"><strong>Tu Tienda Online</strong> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="btn_compra_carrito"><strong>Productos</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="descripcion"><strong>Carrito</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="nosotros"><strong>Nosotros</strong></a>
+                </li>
+            </ul>
+            <div>
+                <select id="category" class="btn btn-outline-success my-2 my-sm-0">
+                    <option value="mensaje personalizado" selected>Categorías<option>
+                    <option id="opTodos" value="Todos">Todos</option>
+                    <option id="opEscolar" value="Escolar">Escolar</option>
+                    <option id="opElectronica" value="Electronica">Electronica</option>
+                    <option id="opRopa" value="Ropa">Ropa</option>
+                </select>
+            </div>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btnSeleccionar">Seleccionar</button>
+        </div>
+    </nav>
+
+    <div id="inicio">
+        <div class="position-absolute top-50 start-50 translate-middle border border-5 rounded-end div intro">
+            <h1 class="text-center" id="titulo">Tu Tienda Online</h1>
+            <h5 class="contenido">¡Bienvenido a nuestro E-commerce! Aquí encontrarás todo lo que necesitas para hacer tus compras en línea de manera fácil, cómoda y segura. Desde productos de moda y belleza hasta artículos para el hogar y electrónica, nuestro catálogo de productos es amplio y diverso para satisfacer tus necesidades. Ofrecemos una experiencia de compra en línea fluida y eficiente, con envío rápido y seguro a tu puerta. Además, nuestro equipo de atención al cliente está siempre dispuesto a ayudarte en todo lo que necesites. ¡Explora nuestra tienda en línea y descubre todas las ofertas y promociones que tenemos para ti!</h5>
+        </div>
+    </div>
+
+    <div id="compra_carrito">
+
+      <div class="container text-center contenedor" id="escolar">
+        <h1 class="position-absolute top-50 start-50 translate-middle border border-5 rounded-end div intro addOkSms">El producto se ha agregado exitosamente</h1>
+          <div class="row">
+              <div class="col border border-4 rounded imagen">
+              <img src="https://tecnos.com.co/wp-content/uploads/2021/07/products-Diapositiva1549-300x300.jpg"><br>
+              <h5>Caja de colores profesionales DERWENT</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+              <h5 class="text-start">Precio: $5000</h5>
+              <button class="agregar rounded" id="producto_1" data-precio="5000" data-product="Caja de colores profesionales DERWENT">Agregar al Carrito</button>
+            </div><br>
+            <div class="col border border-4 rounded imagen">
+              <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81nrmd5XXYL._AC_SS300_.jpg"><br>
+              <h5>Kit de colores Prismacolor y sacapuntas scholar</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+              <h5 class="text-start">Precio: $54000</h5>
+              <button class="rounded agregar" data-precio="54000" data-product="Kit de colores Prismacolor y sacapuntas scholar">Agregar al Carrito</button>
+            </div><br>
+            <div class="col border border-4 rounded imagen">
+              <img src="https://i.ebayimg.com/thumbs/images/g/li0AAOSw7zVkA5Pq/s-l300.jpg"><br>
+              <h5>Lapices de grafito profesionales Wukraft</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+              <h5 class="text-start">Precio: $45000</h5>
+              <button class="rounded agregar" data-precio="45000" data-product="Lapices de grafito profesionales Wukraft">Agregar al Carrito</button>
+            </div>
+          </div><br>
+          <h1 class="position-absolute top-50 start-50 translate-middle border border-5 rounded-end div intro addOkSms">El producto se ha agregado exitosamente</h1>
+          <div class="row">
+              <div class="col border border-4 rounded imagen">
+                <img src="https://i.ebayimg.com/thumbs/images/g/nJYAAOSwprRi9n3T/s-l300.jpg"><br>
+                <h5>Caja de colores pastel premium</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+                <h5 class="text-start">Precio: $3000</h5>
+                <button class="rounded agregar" data-precio="3000" data-product="Caja de colores pastel premium">Agregar al Carrito</button>
+              </div><br>
+              <div class="col border border-4 rounded imagen">
+                <img src="https://www.arte21online.com/27321-home_default/caja-de-20-lapices-surtidos-marina-museum-acuarela-caran-d-ache.jpg"><br>
+                <h5>Caja de colores madera de abeto</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+                <h5 class="text-start">Precio: $50000</h5>
+                <button class="rounded agregar" data-precio="50000" data-product="Caja de colores madera de abeto">Agregar al Carrito</button>
+              </div><br>
+              <div class="col border border-4 rounded imagen">
+                <img src="https://totenart.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/t/o/totenart-estuche-enrrollable-albrecht-durer-caja.jpg"><br>
+                <h5>Caja de colores pastel Faber Castell ultra premium</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+                <h5 class="text-start">Precio: $9000000000</h5>
+                <button class="rounded agregar" data-precio="9000000000" data-product="Caja de colores pastel Faber Castell ultra premium">Agregar al Carrito</button>
+              </div>
+            </div><br>
+    
+            <div class="row">
+              <div class="col border border-4 rounded imagen">
+                <img src="https://tecnos.com.co/wp-content/uploads/2021/07/products-Diapositiva1549-300x300.jpg"><br>
+                <h5>Cajón de madera colores DERWENT high-quality</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+                <h5 class="text-start">Precio: $7000</h5>
+                <button class="rounded agregar" data-precio="7000" data-product="Cajón de madera colores DERWENT high-quality">Agregar al Carrito</button>
+              </div><br>
+              <div class="col border border-4 rounded imagen">
+                <img src="https://artbendix.net/wp-content/uploads/2020/12/MILAN-LAPICES-DE-COLORES-910-1181-max-300x300.jpg"><br>
+                <h5>Colores estándar MILAN X10 unidades</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+                <h5 class="text-start"Precio: >$85000</h5>
+                <button class="rounded agregar" data-precio="85000" data-product="Colores estándar MILAN X10 unidades">Agregar al Carrito</button>
+              </div><br>
+              <div class="col border border-4 rounded imagen">
+                <img src="https://www.kreateca.cl/wp-content/webpc-passthru.php?src=https://www.kreateca.cl/wp-content/uploads/2020/07/7705M72-01-300x300.jpg&nocache=1"><br>
+                <h5>Colores Expression madera de acacia premium</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+                <h5 class="text-start">Precio: $596000</h5>
+                <button class="rounded agregar" data-precio="596000" data-product="Colores Expression madera de acacia premium">Agregar al Carrito</button>
+              </div>
+            </div><br><br>
+
+            <div class="row">
+                <div class="col border border-4 rounded imagen">
+                  <img src="https://www.artemiranda.es/img/c/22818.jpg"><br>
+                  <h5>Paquete de colores pastel multinivel Prismacolor</h5>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+                  <h5 class="text-start">Precio: $7000</h5>
+                  <button class="rounded agregar" data-precio="929000" data-product="Paquete de colores pastel multinivel Prismacolor">Agregar al Carrito</button>
+                </div><br>
+                <div class="col border border-4 rounded imagen">
+                  <img src="https://tiendadearteonline.com/wp-content/uploads/2022/03/economico1-300x300.jpg"><br>
+                  <h5>Maleta de colores Faber Castell profesionales</h5>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+                  <h5 class="text-start"Precio: >$85000</h5>
+                  <button class="rounded agregar" data-precio="630000" data-product="Maleta de colores Faber Castell profesionales">Agregar al Carrito</button>
+                </div><br>
+                <div class="col border border-4 rounded imagen">
+                  <img src="https://www.boykot.cl/wp-content/uploads/2021/08/op946-1-58117555-8794-43e8-845f-843f5510f467-300x300.png"><br>
+                  <h5>Caja de coles Boykot multinivel premium</h5>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+                  <h5 class="text-start">Precio: $596000</h5>
+                  <button class="rounded agregar" data-precio="9860000" data-product="Caja de coles Boykot multinivel premium">Agregar al Carrito</button>
+                </div>
+        </div><br>
+      </div>
+
+      <div class="container text-center contenedor" id="electronics">
+        <h1 class="position-absolute top-50 start-50 translate-middle border border-5 rounded-end div intro addOkSms">El producto se ha agregado exitosamente</h1>
+        <div class="row">
+            <div class="col border border-4 rounded imagen">
+            <img src="https://s.alicdn.com/@sc04/kf/Hcd033b8f4e6a4146be83a295052169b9r.jpg_300x300.jpg"><br>
+            <h5>Funda inteligente para tablet</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+            <h5 class="text-start">Precio: $5000</h5>
+            <button class="agregar rounded" id="producto_1" data-precio="5000" data-product="Funda inteligente para tablet">Agregar al Carrito</button>
+          </div><br>
+          <div class="col border border-4 rounded imagen">
+            <img src="https://s.alicdn.com/@sc04/kf/H7f4c0a6fa7d942c0892a9fdb1e67795ai.png_300x300.png"><br>
+            <h5>Bateria portable para telefono</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+            <h5 class="text-start">Precio: $54000</h5>
+            <button class="rounded agregar" data-precio="54000" data-product="Bateria portable para telefono">Agregar al Carrito</button>
+          </div><br>
+          <div class="col border border-4 rounded imagen">
+            <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51aRupSSOKL._AC_SS300_.jpg"><br>
+            <h5>Buscador de llaves</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+            <h5 class="text-start">Precio: $45000</h5>
+            <button class="rounded agregar" data-precio="45000" data-product="Buscador de llaves">Agregar al Carrito</button>
+          </div>
+        </div><br>
+  
+        <div class="row">
+            <div class="col border border-4 rounded imagen">
+              <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/7157nop6HaL._AC_SS300_.jpg"><br>
+              <h5>Tablero de ajedrez electronico</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+              <h5 class="text-start">Precio: $3000</h5>
+              <button class="rounded agregar" data-precio="3000" data-product="Tablero de ajedrez electronico">Agregar al Carrito</button>
+            </div><br>
+            <div class="col border border-4 rounded imagen">
+              <img src="https://i.etsystatic.com/40921432/c/1333/1333/334/0/il/baff25/4751021787/il_300x300.4751021787_ho4e.jpg"><br>
+              <h5>Kit gamer apple</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+              <h5 class="text-start">Precio: $50000</h5>
+              <button class="rounded agregar" data-precio="50000" data-product="Kit gamer apple">Agregar al Carrito</button>
+            </div><br>
+            <div class="col border border-4 rounded imagen">
+              <img src="https://d1v51qgszgkqrr.cloudfront.net/media/catalog/product/cache/0e99a628f03dfe32a1925baa02d996ad/g/e/ge-dpi610-1000x1000.jpg"><br>
+              <h5>Barómetro digital</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+              <h5 class="text-start">Precio: $9000000000</h5>
+              <button class="rounded agregar" data-precio="9000000000" data-product="Barómetro digital">Agregar al Carrito</button>
+            </div>
+          </div><br>
+  
+          <div class="row">
+            <div class="col border border-4 rounded imagen">
+              <img src="https://cdn.shopify.com/s/files/1/1238/4940/products/winsor-newton-marker-set-winsor-newton-promarker-brush-set-of-48-colours-item-0290080-37379222929661_300x.jpg?v=1655326191"><br>
+              <h5>Kit inteligente de maquillaje</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+              <h5 class="text-start">Precio: $7000</h5>
+              <button class="rounded agregar" data-precio="7000" data-product="Kit inteligente de maquillaje">Agregar al Carrito</button>
+            </div><br>
+            <div class="col border border-4 rounded imagen">
+              <img src="https://res.cloudinary.com/lrfkupuqq/image/upload/c_fill,h_300,w_300,f_auto,q_auto:eco/v1/electroprops/f6zm7euw4shb5cj4pgo2"><br>
+              <h5>Computadora de mesa 750</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+              <h5 class="text-start"Precio: >$85000</h5>
+              <button class="rounded agregar" data-precio="85000" data-product="Computadora de mesa 750">Agregar al Carrito</button>
+            </div><br>
+            <div class="col border border-4 rounded imagen">
+              <img src="https://i.ebayimg.com/thumbs/images/g/LSwAAOSwSn1cELRG/s-l300.jpg"><br>
+              <h5>Audifonos inalambricos WaveSound</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+              <h5 class="text-start">Precio: $596000</h5>
+              <button class="rounded agregar" data-precio="596000" data-product="Audifonos inalambricos WaveSound">Agregar al Carrito</button>
+            </div>
+          </div><br><br>
+
+          <div class="row">
+              <div class="col border border-4 rounded imagen">
+                <img src="https://www.sony.com/is/image/gwtprod/6145c1d32e6ac8e63a46c912dc33c5bb?fmt=pjpg&op_sharpen=1&wid=300&bgcolor=FFFFFF"><br>
+                <h5>Audifonos inalambricos Sony 3500</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+                <h5 class="text-start">Precio: $7000</h5>
+                <button class="rounded agregar" data-precio="929000" data-product="Audifonos inalambricos Sony 3500">Agregar al Carrito</button>
+              </div><br>
+              <div class="col border border-4 rounded imagen">
+                <img src="https://www.plum-mobile.com/wp-content/uploads/2022/02/gator-7-thum-img-2-300x300.jpg"><br>
+                <h5>Telefono Plum anti bomba nuclear</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+                <h5 class="text-start"Precio: >$85000</h5>
+                <button class="rounded agregar" data-precio="630000" data-product="Telefono Plum anti bomba nuclear">Agregar al Carrito</button>
+              </div><br>
+              <div class="col border border-4 rounded imagen">
+                <img src="https://cdn.shopify.com/s/files/1/0024/9803/5810/products/596667-Product-0-I-637982213840849162_300x300.jpg?v=1662700221"><br>
+                <h5>Telefono Apple RTX-3500</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+                <h5 class="text-start">Precio: $596000</h5>
+                <button class="rounded agregar" data-precio="9860000" data-product="Telefono Apple RTX-3500">Agregar al Carrito</button>
+              </div>
+      </div><br>
+      </div>
+
+      <div class="container text-center contenedor" id="ropa">
+        <h1 class="position-absolute top-50 start-50 translate-middle border border-5 rounded-end div intro addOkSms">El producto se ha agregado exitosamente</h1>
+        <div class="row">
+            <div class="col border border-4 rounded imagen">
+            <img src="https://cdn.shopify.com/s/files/1/0015/2528/4963/products/WhatsAppImage2022-07-05at10.35.38PM_300x300.jpg?v=1657289200"><br>
+            <h5>Camisa estilo periodico color pastel</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+            <h5 class="text-start">Precio: $5000</h5>
+            <button class="agregar rounded" id="producto_1" data-precio="5000" data-product="Camisa estilo periodico color pastel">Agregar al Carrito</button>
+          </div><br>
+          <div class="col border border-4 rounded imagen">
+            <img src="https://cdn.shopify.com/s/files/1/0555/2413/1005/products/CamisaJeanHombre1W_300x300.jpg?v=1625260416"><br>
+            <h5>Camisa manga larga tela de jean</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+            <h5 class="text-start">Precio: $54000</h5>
+            <button class="rounded agregar" data-precio="54000" data-product="Camisa manga larga tela de jean">Agregar al Carrito</button>
+          </div><br>
+          <div class="col border border-4 rounded imagen">
+            <img src="https://www.plicata.com.co/wp-content/uploads/2022/12/Camisa-Chalis-Flores-2-Naranja-Manga-Corta-Mujer-Plicata-300x300.gif"><br>
+            <h5>Camiseta manga corta cuello en v</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+            <h5 class="text-start">Precio: $45000</h5>
+            <button class="rounded agregar" data-precio="45000" data-product="Camiseta manga corta cuello en v">Agregar al Carrito</button>
+          </div>
+        </div><br>
+  
+        <div class="row">
+            <div class="col border border-4 rounded imagen">
+              <img src="https://lapercha.com.co/wp-content/uploads/2022/12/211942A4-F7DA-4800-97C1-066E5A769551-300x300.jpeg"><br>
+              <h5>Camisa manga larga azul claro cuello cerrado</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+              <h5 class="text-start">Precio: $3000</h5>
+              <button class="rounded agregar" data-precio="3000" data-product="Camisa manga larga azul claro cuello cerrado">Agregar al Carrito</button>
+            </div><br>
+            <div class="col border border-4 rounded imagen">
+              <img src="https://img.directindustry.es/images_di/photo-m2/166328-14607759.jpg"><br>
+              <h5>Camisa manga larga gris cuello en v</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+              <h5 class="text-start">Precio: $50000</h5>
+              <button class="rounded agregar" data-precio="50000" data-product="Camisa manga larga gris cuello en v">Agregar al Carrito</button>
+            </div><br>
+            <div class="col border border-4 rounded imagen">
+              <img src="https://edsel.co/wp-content/uploads/2020/08/03-YOKK_morada_mga_corta_Cuello_contraste_001-300x300.jpg"><br>
+              <h5>Camisa morada manga corta cuello en v</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+              <h5 class="text-start">Precio: $9000000000</h5>
+              <button class="rounded agregar" data-precio="9000000000" data-product="Camisa morada manga corta cuello en v">Agregar al Carrito</button>
+            </div>
+          </div><br>
+  
+          <div class="row">
+            <div class="col border border-4 rounded imagen">
+              <img src="https://karibik.vtexassets.com/arquivos/ids/205447-300-300?v=1765494524&width=300&height=300&aspect=true"><br>
+              <h5>Camisa manga larga azul claro cuello en v tela de jean</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+              <h5 class="text-start">Precio: $7000</h5>
+              <button class="rounded agregar" data-precio="7000" data-product="Camisa manga larga azul claro cuello en v tela de jean">Agregar al Carrito</button>
+            </div><br>
+            <div class="col border border-4 rounded imagen">
+              <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61nvcw1lPbL._AC_SS300_.jpg"><br>
+              <h5>Camisa tela rtx roja cuello redondo manga larga</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+              <h5 class="text-start"Precio: >$85000</h5>
+              <button class="rounded agregar" data-precio="85000" data-product="Camisa tela rtx roja cuello redondo manga larga">Agregar al Carrito</button>
+            </div><br>
+            <div class="col border border-4 rounded imagen">
+              <img src="https://karibik.vtexassets.com/arquivos/ids/205137-300-300?v=1765649060&width=300&height=300&aspect=true"><br>
+              <h5>Pantalon holgado salmón estilo coreano</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+              <h5 class="text-start">Precio: $596000</h5>
+              <button class="rounded agregar" data-precio="596000" data-product="Pantalon holgado salmón estilo coreano">Agregar al Carrito</button>
+            </div>
+          </div><br><br>
+
+          <div class="row">
+              <div class="col border border-4 rounded imagen">
+                <img src="https://lexqueen.pe/wp-content/uploads/2022/11/Jogger-ribete-plomo-1-300x300.jpg"><br>
+                <h5>Jogger negro-blanco simple estilo coreano</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+                <h5 class="text-start">Precio: $7000</h5>
+                <button class="rounded agregar" data-precio="929000" data-product="Jogger negro-blanco simple estilo coreano">Agregar al Carrito</button>
+              </div><br>
+              <div class="col border border-4 rounded imagen">
+                <img src="https://foxes.cl/wp-content/uploads/2021/03/Pantalones-de-correr-morados-para-hombre-ropa-de-calle-con-bolsillos-Cargo-Hip-Hop-moda-coreana-300x300.jpg"><br>
+                <h5>Jogger rojo-negro estilo cargo</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+                <h5 class="text-start"Precio: >$85000</h5>
+                <button class="rounded agregar" data-precio="630000" data-product="Jogger rojo-negro estilo cargo">Agregar al Carrito</button>
+              </div><br>
+              <div class="col border border-4 rounded imagen">
+                <img src="https://i.ebayimg.com/thumbs/images/g/T6sAAOSw9OZivnFC/s-l300.jpg"><br>
+                <h5>Sudadera negro-blanco estilo coreano</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat perspiciatis similique eos eum. Quaerat tempore delectus sunt officiis iste illum dignissimos dicta magnam repellat, incidunt fuga, dolorem quam.</p>
+                <h5 class="text-start">Precio: $596000</h5>
+                <button class="rounded agregar" data-precio="9860000" data-product="Sudadera negro-blanco estilo coreano">Agregar al Carrito</button>
+              </div>
+      </div><br>
+      </div>
+
+
+
+
+    </div>
+
+    <div id="carrito">
+        <div class="text-center contenido intro">
+            <table class="table">
+                <h1 id="carritoNo">No hay productos en el carrito</h1>
+                <!-- <marquee behavior="scroll" direction="right" scrollamount="10"><h1>No hay productos en el carrito</h1></marquee> -->
+                <h1 id="compraRecienteSms">Compras Recientes:</h1>
+                <tbody id="lista">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="intro text-center" id="">
+            <h3 id="recientes2"></h3>
+            <em id="recientesList"></p></em>
+        </div>
+
+        <h5 id="TotalSms" class="intro text-center ">Total a pagar: $<em id="total"></em></h5>
+        <button type="button" class="border border-5 rounded-end div intro" id="botonComprar">Comprar productos</button>
+        <button type="button" class="border border-5 rounded-end div intro" id="botonMostrar">Mostrar compras recientes</button>
+        <button type="button" class="border border-5 rounded-end div intro" id="cerrar">Cerrar recientes</button>
+
+    </div>
+
+    <div id="nosotro" class="row ">
+        <div class="border border-5 rounded-end div intro contenido col-sm-6" id="noso1">
+            <h4>La misión de este sitio es ofrecer una plataforma en línea eficiente y confiable para que los clientes compren productos o servicios de alta calidad. La visión es ser reconocida como un líder en el sector, ofreciendo una experiencia de compra en línea excepcional para nuestros clientes. Además, nuestra visión es expandirse a nivel nacional e internacional, llegando a nuevos mercados y clientes potenciales en todo el mundo. Para lograr esta visión, nuestro equipo se esforzará por ofrecer productos innovadores y de alta calidad, mejorar continuamente nuestro sitio web y brindar un servicio al cliente excepcional para garantizar la satisfacción de nuestros clientes. Con una fuerte misión y visión, nuestro sitio web tiene el potencial de ser una fuerza líder en el mercado y esperamos que un destino preferido para compras en línea.</h4>
+        </div>
+        <div style="position:relative;height:520px;" class="col-sm-6 border border-5 rounded-end div intro contenido" id="noso2">
+
+            <p><strong>Nuestras redes sociales</strong></p>
+
+            <marquee class="text-warning" behavior="scroll" direction="right" scrollamount="10">Instagram</marquee>
+            <marquee class="text-info" behavior="scroll" direction="right" scrollamount="5">Facebook</marquee>
+            <marquee class="text-success" behavior="scroll" direction="right" scrollamount="1">Twitter</marquee>
+            <marquee class="text-danger" behavior="scroll" direction="right" scrollamount="10">Pinterest</marquee>    
+            <marquee class="text-warning" behavior="scroll" direction="right" scrollamount="20">Telegram</marquee>
+            <marquee class="text-dark" behavior="scroll" direction="right" scrollamount="10">Tik Tok</marquee>
+            <marquee class="text-success" behavior="scroll" direction="right" scrollamount="5">WhatsApp</marquee>
+            <marquee class="text-danger" behavior="scroll" direction="right" scrollamount="10">Youtube</marquee>
+            <marquee class="text-dark" behavior="scroll" direction="right" scrollamount="1">LikedIn</marquee>
+
+
+
+        </div>
+
+        
+
+
+    </div>
+
+
+
+
+
+
+    <div id="CompraSms">
+        <div class="position-absolute top-50 start-50 translate-middle border border-5 rounded-end div intro sms">
+            <h1>COMPRA REALIZADA. MUCHAS GRACIAS POR SU COMPRA.</h1>
+        </div>
+    </div>
+
+      <script src="./script.js"></script>
+</body>
+</html>

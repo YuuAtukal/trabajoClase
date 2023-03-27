@@ -1,0 +1,48 @@
+body{
+    background-attachment: fixed;
+} 
+
+.contenido{
+    padding: 50px;
+    font-size: 25px;
+}
+.div{
+    width: 800px;
+    opacity: 0.9;
+}
+
+.contenedor{
+    padding-top: 20px;
+}
+
+.imagen{
+    background-color: #B3E5BE;
+    padding: auto;
+}
+
+.intro{
+    background-color: #B3E5BE;
+}
+
+.sms{
+    padding: 75px;
+}
+
+.addOkSms{
+    background-color: blueviolet;
+    position: absolute absolute;
+}
+
+#noso1{
+    width: 900px;
+    opacity: 0.9;
+    background-color: #B3E5BE;
+    padding-bottom: 10px;
+}
+#noso2{
+    width: 430px;
+    opacity: 0.9;
+    background-color: #B3E5BE;
+    padding-bottom: 10px;
+}
+
